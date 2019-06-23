@@ -13,16 +13,10 @@
 .tm-section-description{
     line-height: 1.5;
 }
-.tm-team-description-container{
+.tm-content-box .tm-team-description-container{
     width: 30%;
     float: left;
     margin-top: 15%;
-}
-.tm-main-content div:first-child{
-    border: 30px solid transparent;
-    border-left: 30px solid #76cdd7;
-    border-top: 30px solid #76cdd7;
-    display: block;
 }
 .tm-banner-inner{
     outline: 30px solid #76cdd7;
@@ -53,7 +47,7 @@
 a[href$=".html"]:visited{
     color: #ffb347;
 }
-a::nth-child(4):hover{
+.tm-content-box li:nth-child(4) a:hover{
     color: #ffb347;
 }
 
@@ -88,10 +82,15 @@ input[type="text"]:focus, input[type="email"]:focus{
     color: #ffffff;
     border-radius: 5px;
 }
+
 .form-group input::-moz-placeholder:focus{
     color: #fff;
 }
 .form-group textarea {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+}
+.form-group textarea:focus{
     border: 2px solid lightblue;
     border-radius: 5px;
 }
@@ -100,6 +99,7 @@ button.btn-primary{
     border: 2px solid lightblue;
     color: lightblue;
     padding: 8px 40px;
+    float: right;
 }
 button.btn-primary:hover{
     color: #fff;
@@ -116,3 +116,6 @@ button.btn-primary:hover{
       -webkit-transform: rotateY(360deg);
     }
   }
+@media print and (color){
+    
+}
