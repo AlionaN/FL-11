@@ -1,0 +1,154 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+:root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #162b4d;
+  --link: #fff;
+  --link--hover: #b8b8b8;
+  --bg-footer-color: #162b4d;;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #0b192f;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "section aside"
+  "footer footer";
+  grid-template-rows: 4.5% 1fr 6%;
+  grid-template-columns: 70% 30%;
+}
+header{
+  background: #162b4d;
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  margin-bottom: 1.3%;
+}
+header p{
+  color: #fff;
+  margin: 1% 0 2% 2%;
+  font-size: 24px;
+  font-weight: 100;
+}
+header span{
+  color: #B71757;
+}
+header ul{
+  list-style: none;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 2%;
+}
+header ul li{
+  display: inline-block;
+  color: #fff;
+  font-weight: 100;
+}
+section{
+  display: grid;
+  grid-area: section;
+  margin-right: 1%;
+}
+section .grids{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+section div[class^="post"]:last-child{
+  padding: 3%;
+}
+section img{
+  width: 100%;
+}
+section div[class^="post"]:nth-child(2), section div[class^="post"]:nth-child(6){
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2% 2% 7% 7%;
+}
+section div[class^="post"]:nth-child(2) p:nth-child(2), section div[class^="post"]:nth-child(6) p:nth-child(2){
+  margin-left: 35%;
+}
+section div[class^="post"]:nth-child(3), section div[class^="post"]:nth-child(7){
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2% 7% 7% 2%;
+  flex-direction: row-reverse;
+}
+section div[class^="post"]:nth-child(3) p:nth-child(2), section div[class^="post"]:nth-child(7) p:nth-child(2){
+  margin-right: 45%;
+}
+section div[class^="post"]:nth-child(3) p:nth-child(3), section div[class^="post"]:nth-child(7) p:nth-child(3), section div[class^="post"]:nth-child(3) h2, section div[class^="post"]:nth-child(7) h2{
+  text-align: right;
+}
+section h2{
+  color: #fff;
+  font-size: 1em;
+  font-weight: 100;
+  height: min-content;
+  margin: 2% 0 0 0;
+  
+}
+section div[class^="post"] p:nth-child(3){
+  color: rgba(256, 256, 256, .7);
+  font-weight: 100;
+  width: 90%;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.7em;
+  height: min-content;
+
+}
+section div[class^="post"] p:nth-child(2){
+  color: rgba(256, 256, 256, .3);
+  font-size: 0.7em;
+  display: inline-block;
+  margin: 0;
+  font-weight: 100;
+  height: min-content;
+  
+}
+section div[class^="post"] p:nth-child(2)::first-line{
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+aside{
+  
+  grid-area: aside;
+  height: min-content;
+}
+aside div{
+  margin-bottom: 1%;
+  background: #fff;
+}
+aside img{
+  width: 100%;
+}
+
+footer{
+  background: #162b4d;
+  grid-area: footer;
+  margin-top: 1%;
+}
+
+/* Your styles go here */
